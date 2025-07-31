@@ -1,0 +1,124 @@
+/* App.css - This file would typically be compiled from App.scss */
+
+/* Custom styles to complement Bootstrap */
+body {
+  background-color: #f0f2f5; /* A softer background color */
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.custom-font {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Enhanced Card Styling */
+.card {
+  border: none; /* Remove default card border */
+  border-radius: 1rem; /* More rounded corners for the card */
+  overflow: hidden; /* Ensures content respects border-radius */
+}
+
+.card.shadow-lg {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); /* Lighter, more modern shadow */
+}
+
+.card-body {
+  padding: 3rem; /* Increased padding inside the card for more breathing room */
+}
+
+/* Input Group Styling for better alignment and appearance */
+/* Specific overrides to ensure custom border-radius applies over Bootstrap's defaults */
+.input-group .form-control {
+  border-top-left-radius: 0.75rem !important; /* More rounded corners for input */
+  border-bottom-left-radius: 0.75rem !important;
+  border-top-right-radius: 0 !important; /* Ensure no rounding on the right */
+  border-bottom-right-radius: 0 !important; /* Ensure no rounding on the right */
+  border-right: none; /* Remove right border to blend with button */
+  padding: 0.85rem 1.25rem; /* Adjust input padding */
+  font-size: 1.1rem; /* Larger font size for input */
+}
+
+.input-group .btn {
+  border-top-right-radius: 0.75rem !important; /* More rounded corners for button */
+  border-bottom-right-radius: 0.75rem !important;
+  border-top-left-radius: 0 !important; /* Ensure no rounding on the left */
+  border-bottom-left-radius: 0 !important; /* Ensure no rounding on the left */
+  padding: 0.85rem 1.75rem; /* Adjust button padding */
+  font-size: 1.1rem; /* Larger font size for button */
+  font-weight: 600; /* Make button text bolder */
+  background-color: #007bff; /* Bootstrap primary blue */
+  border-color: #007bff;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.input-group .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3;
+}
+
+/* Adjust spinner color to match primary button */
+.spinner-border.text-primary {
+  color: #007bff !important; /* Ensure spinner matches primary color */
+}
+
+/* Styling for download ready section */
+.card.bg-light-subtle {
+  background-color: #e9ecef !important; /* Lighter background for the result card */
+  border-radius: 0.75rem; /* Rounded corners for result card */
+  padding: 1.5rem; /* Padding for result card */
+}
+
+.card.bg-light-subtle .card-title {
+  color: #343a40; /* Darker text for titles */
+}
+
+.card.bg-light-subtle .btn-success {
+  background-color: #28a745; /* Bootstrap success green */
+  border-color: #28a745;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.card.bg-light-subtle .btn-success:hover {
+  background-color: #218838; /* Darker green on hover */
+  border-color: #1e7e34;
+}
+
+.img-fluid.rounded {
+  border-radius: 0.5rem !important; /* Ensure image has rounded corners */
+}
+
+.text-muted {
+  font-size: 0.875rem; /* Slightly smaller font for muted text */
+}
+
+/* General text improvements */
+.card-title {
+  font-size: 2.25rem; /* Larger title font size */
+  font-weight: 700; /* Bolder title */
+  color: #212529 !important; /* Even darker for better contrast */
+}
+
+.card-text {
+  font-size: 1.1rem; /* Slightly larger body text */
+}
+
+.text-dark {
+  color: #343a40 !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+/* Footer alignment */
+footer {
+  text-align: center; /* Center the footer text */
+}
